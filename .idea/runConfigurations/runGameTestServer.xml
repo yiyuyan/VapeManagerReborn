@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component>
+  <configuration default="false" factoryName="Application" name="runGameTestServer" singleton="false" type="Application">
+    <option name="MAIN_CLASS_NAME" value="net.minecraftforge.bootstrap.ForgeBootstrap"/>
+    <option name="VM_PARAMETERS" value="-Dforge.logging.console.level=debug -Dforge.logging.markers=REGISTRIES -Dnet.minecraftforge.gradle.GradleStart.srg.srg-mcp=D:\MinecraftForgeMod\VapeManagerReborn\build\createSrgToMcp\output.srg -Dmixin.env.remapRefMap=true -Dmixin.env.refMapRemappingFile=D:\MinecraftForgeMod\VapeManagerReborn\build\createSrgToMcp\output.srg -Dforge.enabledGameTestNamespaces=vmr -Djava.net.preferIPv6Addresses=system"/>
+    <option name="PROGRAM_PARAMETERS" value="--launchTarget forge_userdev_server_gametest --gameDir . --mixin.config vmr.mixins.json"/>
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$\run"/>
+    <module name="VapeManagerReborn.main"/>
+    <envs>
+      <env name="MOD_CLASSES" value="vmr%%$PROJECT_DIR$\build\resources\main;vmr%%$PROJECT_DIR$\build\classes\java\main"/>
+      <env name="MCP_MAPPINGS" value="official_1.20.4"/>
+    </envs>
+    <method v="2">
+      <option enabled="true" name="Make"/>
+      <option enabled="true" externalProjectPath="$PROJECT_DIR$" name="Gradle.BeforeRunTask" tasks=":prepareRunGameTestServerCompile"/>
+    </method>
+  </configuration>
+</component>

@@ -1,0 +1,398 @@
+[244月2024 20:56:01.516] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forge_userdev_client, --version, MOD_DEV, --assetIndex, 12, --assetsDir, E:\.gradle\caches\forge_gradle\assets, --gameDir, ., --mixin.config, vmr.mixins.json]
+[244月2024 20:56:01.518] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 17.0.2+8-LTS-86
+[244月2024 20:56:01.520] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.1.2 starting: java version 17.0.2 by Oracle Corporation; OS Windows 10 arch amd64 version 10.0
+[244月2024 20:56:01.567] [main/DEBUG] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Found launch services [forge_userdev_client,forge_dev_data,minecraft,forge_userdev_server_gametest,forge_dev_client,forge_userdev_data,forge_dev_server_gametest,testharness,forge_userdev_server,forge_client,forge_dev_server,forge_server]
+[244月2024 20:56:01.578] [main/DEBUG] [cpw.mods.modlauncher.NameMappingServiceHandler/MODLAUNCHER]: Found naming services : [srgtomcp]
+[244月2024 20:56:01.641] [main/DEBUG] [cpw.mods.modlauncher.LaunchPluginHandler/MODLAUNCHER]: Found launch plugins: [mixin,eventbus,slf4jfixer,object_holder_definalize,runtime_enum_extender,capability_token_subclass,accesstransformer,runtimedistcleaner]
+[244月2024 20:56:01.650] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Discovering transformation services
+[244月2024 20:56:01.653] [main/DEBUG] [net.minecraftforge.fml.loading.FMLPaths/CORE]: Path GAMEDIR is D:\MinecraftForgeMod\VapeManagerReborn\run
+[244月2024 20:56:01.654] [main/DEBUG] [net.minecraftforge.fml.loading.FMLPaths/CORE]: Path MODSDIR is D:\MinecraftForgeMod\VapeManagerReborn\run\mods
+[244月2024 20:56:01.655] [main/DEBUG] [net.minecraftforge.fml.loading.FMLPaths/CORE]: Path CONFIGDIR is D:\MinecraftForgeMod\VapeManagerReborn\run\config
+[244月2024 20:56:01.656] [main/DEBUG] [net.minecraftforge.fml.loading.FMLPaths/CORE]: Path FMLCONFIG is D:\MinecraftForgeMod\VapeManagerReborn\run\config\fml.toml
+[244月2024 20:56:01.714] [main/WARN] [net.minecraftforge.fml.loading.FMLConfig/CORE]: Configuration file D:\MinecraftForgeMod\VapeManagerReborn\run\config\fml.toml is not correct. Correcting
+[244月2024 20:56:01.716] [main/INFO] [net.minecraftforge.fml.loading.FMLConfig/CORE]: Incorrect key [earlyWindowSkipGLVersions] was corrected from null to []
+[244月2024 20:56:01.716] [main/INFO] [net.minecraftforge.fml.loading.FMLConfig/CORE]: Incorrect key [earlyWindowSquir] was corrected from null to false
+[244月2024 20:56:01.716] [main/INFO] [net.minecraftforge.fml.loading.FMLConfig/CORE]: Incorrect key [earlyWindowShowCPU] was corrected from null to false
+[244月2024 20:56:01.730] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[244月2024 20:56:01.959] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
+[244月2024 20:56:02.048] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
+[244月2024 20:56:02.140] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Found transformer service: fml: /
+[244月2024 20:56:02.151] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Found transformer service: mixin: /
+[244月2024 20:56:02.151] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Transformation services loading
+[244月2024 20:56:02.152] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Loading service mixin
+[244月2024 20:56:02.153] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Loaded service mixin
+[244月2024 20:56:02.153] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Loading service fml
+[244月2024 20:56:02.222] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: Detected version data : VersionInfo[forgeVersion=49.0.42, mcVersion=1.20.4, mcpVersion=20231207.112700, forgeGroup=net.minecraftforge]
+[244月2024 20:56:02.226] [main/DEBUG] [net.minecraftforge.fml.loading.LauncherVersion/CORE]: Found FMLLauncher version 49.0.42
+[244月2024 20:56:02.227] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: FML 49.0.42 loading
+[244月2024 20:56:02.227] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: Found ModLauncher version: 10.1.2
+[244月2024 20:56:02.228] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: Found AccessTransformer version: 8.1.1
+[244月2024 20:56:02.229] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: Found EventBus version: 6.2.0
+[244月2024 20:56:02.229] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: Found RuntimeDistCleaner version: 49.0.42
+[244月2024 20:56:02.230] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: FML found CoreMod version : 5.1.0
+[244月2024 20:56:02.231] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: Found ForgeSPI version: 7.1.3
+[244月2024 20:56:02.231] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Loaded service fml
+[244月2024 20:56:02.232] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Configuring option handling for services
+[244月2024 20:56:02.237] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Transformation services initializing
+[244月2024 20:56:02.238] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initializing transformation service mixin
+[244月2024 20:56:02.310] [main/DEBUG] [mixin/]: MixinService [ModLauncher] was successfully booted in SecureModuleClassLoader[SECURE-BOOTSTRAP]@1571967156
+[244月2024 20:56:02.377] [EarlyDisplay/INFO] [EARLYDISPLAY/]: GL info: Intel(R) HD Graphics 630 GL version 4.6.0 - Build 31.0.101.2121, Intel
+[244月2024 20:56:02.402] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=jar:file:///E:/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar!/ Service=ModLauncher Env=CLIENT
+[244月2024 20:56:02.405] [main/DEBUG] [mixin/]: Initialising Mixin Platform Manager
+[244月2024 20:56:02.406] [main/DEBUG] [mixin/]: Adding mixin platform agents for container ModLauncher Root Container(ModLauncher:4f56a0a2)
+[244月2024 20:56:02.406] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for ModLauncher Root Container(ModLauncher:4f56a0a2)
+[244月2024 20:56:02.407] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container ModLauncher Root Container(ModLauncher:4f56a0a2)
+[244月2024 20:56:02.409] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for ModLauncher Root Container(ModLauncher:4f56a0a2)
+[244月2024 20:56:02.409] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container ModLauncher Root Container(ModLauncher:4f56a0a2)
+[244月2024 20:56:02.413] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initialized transformation service mixin
+[244月2024 20:56:02.414] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initializing transformation service fml
+[244月2024 20:56:02.414] [main/DEBUG] [net.minecraftforge.fml.loading.FMLServiceProvider/CORE]: Setting up basic FML game directories
+[244月2024 20:56:02.415] [main/DEBUG] [net.minecraftforge.fml.loading.FMLPaths/CORE]: Path GAMEDIR is D:\MinecraftForgeMod\VapeManagerReborn\run
+[244月2024 20:56:02.415] [main/DEBUG] [net.minecraftforge.fml.loading.FMLPaths/CORE]: Path MODSDIR is D:\MinecraftForgeMod\VapeManagerReborn\run\mods
+[244月2024 20:56:02.416] [main/DEBUG] [net.minecraftforge.fml.loading.FMLPaths/CORE]: Path CONFIGDIR is D:\MinecraftForgeMod\VapeManagerReborn\run\config
+[244月2024 20:56:02.416] [main/DEBUG] [net.minecraftforge.fml.loading.FMLPaths/CORE]: Path FMLCONFIG is D:\MinecraftForgeMod\VapeManagerReborn\run\config\fml.toml
+[244月2024 20:56:02.416] [main/DEBUG] [net.minecraftforge.fml.loading.FMLServiceProvider/CORE]: Loading configuration
+[244月2024 20:56:02.420] [main/DEBUG] [net.minecraftforge.fml.loading.FMLServiceProvider/CORE]: Preparing ModFile
+[244月2024 20:56:02.432] [main/DEBUG] [net.minecraftforge.fml.loading.FMLServiceProvider/CORE]: Preparing launch handler
+[244月2024 20:56:02.433] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: Using forge_userdev_client as launch service
+[244月2024 20:56:02.463] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initialized transformation service fml
+[244月2024 20:56:02.463] [main/DEBUG] [cpw.mods.modlauncher.NameMappingServiceHandler/MODLAUNCHER]: Current naming domain is 'mcp'
+[244月2024 20:56:02.463] [main/DEBUG] [cpw.mods.modlauncher.NameMappingServiceHandler/MODLAUNCHER]: Identified name mapping providers {srg=net.minecraftforge.fml.loading.MCPNamingService@67207d8a}
+[244月2024 20:56:02.464] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Transformation services begin scanning
+[244月2024 20:56:02.466] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Beginning scan trigger - transformation service mixin
+[244月2024 20:56:02.467] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: End scan trigger - transformation service mixin
+[244月2024 20:56:02.469] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Beginning scan trigger - transformation service fml
+[244月2024 20:56:02.470] [main/DEBUG] [net.minecraftforge.fml.loading.FMLServiceProvider/CORE]: Initiating mod scan
+[244月2024 20:56:02.482] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/CORE]: Found Mod Locators : (mods folder:null),(minecraft:null),(classpath:null),(forge_dev_locator:null),(forge_userdev_locator:null)
+[244月2024 20:56:02.483] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/CORE]: Found Dependency Locators : (JarInJar:null)
+[244月2024 20:56:03.309] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file  with {minecraft} mods - versions {1.20.4}
+[244月2024 20:56:03.571] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate D:\MinecraftForgeMod\VapeManagerReborn\build\resources\main
+[244月2024 20:56:03.592] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file main with {vmr} mods - versions {1.0}
+[244月2024 20:56:03.688] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate /
+[244月2024 20:56:03.701] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file  with {forge} mods - versions {49.0.42}
+[244月2024 20:56:03.734] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from , it does not contain dependency information.
+[244月2024 20:56:03.734] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from , it does not contain dependency information.
+[244月2024 20:56:03.735] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from javafmllanguage-1.20.4-49.0.42.jar, it does not contain dependency information.
+[244月2024 20:56:03.735] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from mclanguage-1.20.4-49.0.42.jar, it does not contain dependency information.
+[244月2024 20:56:03.735] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from lowcodelanguage-1.20.4-49.0.42.jar, it does not contain dependency information.
+[244月2024 20:56:03.735] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from main, it does not contain dependency information.
+[244月2024 20:56:03.736] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from fmlcore-1.20.4-49.0.42.jar, it does not contain dependency information.
+[244月2024 20:56:03.777] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[244月2024 20:56:03.779] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file  with {minecraft} mods - versions {1.20.4}
+[244月2024 20:56:03.782] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file / with languages [LanguageSpec[languageName=minecraft, acceptedVersions=1]]
+[244月2024 20:56:03.783] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate /
+[244月2024 20:56:03.784] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file  with {forge} mods - versions {49.0.42}
+[244月2024 20:56:03.784] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file / with languages [LanguageSpec[languageName=javafml, acceptedVersions=[24,]]]
+[244月2024 20:56:03.789] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Found coremod field_to_method with Javascript path coremods/field_to_method.js
+[244月2024 20:56:03.789] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Found coremod field_to_instanceof with Javascript path coremods/field_to_instanceof.js
+[244月2024 20:56:03.789] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Found coremod add_bouncer_method with Javascript path coremods/add_bouncer_method.js
+[244月2024 20:56:03.790] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Found coremod method_redirector with Javascript path coremods/method_redirector.js
+[244月2024 20:56:03.790] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Found coremod /coremods/field_to_method.js
+[244月2024 20:56:03.790] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Found coremod /coremods/field_to_instanceof.js
+[244月2024 20:56:03.790] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Found coremod /coremods/add_bouncer_method.js
+[244月2024 20:56:03.790] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Found coremod /coremods/method_redirector.js
+[244月2024 20:56:03.790] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate D:\MinecraftForgeMod\VapeManagerReborn\build\resources\main
+[244月2024 20:56:03.793] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file main with {vmr} mods - versions {1.0}
+[244月2024 20:56:03.793] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file D:\MinecraftForgeMod\VapeManagerReborn\build\resources\main with languages [LanguageSpec[languageName=javafml, acceptedVersions=[49,)]]
+[244月2024 20:56:03.795] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: End scan trigger - transformation service fml
+[244月2024 20:56:03.811] [main/DEBUG] [net.minecraftforge.fml.loading.LanguageLoadingProvider/CORE]: Found 3 language providers
+[244月2024 20:56:03.811] [main/DEBUG] [net.minecraftforge.fml.loading.LanguageLoadingProvider/CORE]: Found language provider minecraft, version 1.0
+[244月2024 20:56:03.812] [main/DEBUG] [net.minecraftforge.fml.loading.LanguageLoadingProvider/CORE]: Found language provider lowcodefml, version 49
+[244月2024 20:56:03.812] [main/DEBUG] [net.minecraftforge.fml.loading.LanguageLoadingProvider/CORE]: Found language provider javafml, version 49.0.42
+[244月2024 20:56:03.816] [main/DEBUG] [net.minecraftforge.fml.loading.ModSorter/]: Configured system mods: [minecraft, forge]
+[244月2024 20:56:03.816] [main/DEBUG] [net.minecraftforge.fml.loading.ModSorter/]: Found system mod: minecraft
+[244月2024 20:56:03.817] [main/DEBUG] [net.minecraftforge.fml.loading.ModSorter/]: Found system mod: forge
+[244月2024 20:56:03.835] [main/DEBUG] [net.minecraftforge.fml.loading.ModSorter/LOADING]: Found 2 mod requirements (2 mandatory, 0 optional)
+[244月2024 20:56:03.836] [main/DEBUG] [net.minecraftforge.fml.loading.ModSorter/LOADING]: Found 0 mod requirements missing (0 mandatory, 0 optional)
+[244月2024 20:56:04.689] [main/DEBUG] [net.minecraftforge.fml.loading.MCPNamingService/CORE]: Loaded 34990 method mappings from methods.csv
+[244月2024 20:56:04.725] [main/DEBUG] [net.minecraftforge.fml.loading.MCPNamingService/CORE]: Loaded 32991 field mappings from fields.csv
+[244月2024 20:56:04.787] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Transformation services loading transformers
+[244月2024 20:56:04.788] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initializing transformers for transformation service mixin
+[244月2024 20:56:04.788] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initialized transformers for transformation service mixin
+[244月2024 20:56:04.788] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initializing transformers for transformation service fml
+[244月2024 20:56:04.789] [main/DEBUG] [net.minecraftforge.fml.loading.FMLServiceProvider/CORE]: Loading coremod transformers
+[244月2024 20:56:04.789] [main/DEBUG] [net.minecraftforge.coremod.CoreModEngine/COREMOD]: Loading CoreMod from /coremods/field_to_method.js
+[244月2024 20:56:05.023] [main/DEBUG] [net.minecraftforge.coremod.CoreModEngine/COREMOD]: CoreMod loaded successfully
+[244月2024 20:56:05.023] [main/DEBUG] [net.minecraftforge.coremod.CoreModEngine/COREMOD]: Loading CoreMod from /coremods/field_to_instanceof.js
+[244月2024 20:56:05.112] [main/DEBUG] [net.minecraftforge.coremod.CoreModEngine/COREMOD]: CoreMod loaded successfully
+[244月2024 20:56:05.112] [main/DEBUG] [net.minecraftforge.coremod.CoreModEngine/COREMOD]: Loading CoreMod from /coremods/add_bouncer_method.js
+[244月2024 20:56:05.149] [main/DEBUG] [net.minecraftforge.coremod.CoreModEngine/COREMOD]: CoreMod loaded successfully
+[244月2024 20:56:05.149] [main/DEBUG] [net.minecraftforge.coremod.CoreModEngine/COREMOD]: Loading CoreMod from /coremods/method_redirector.js
+[244月2024 20:56:05.210] [main/DEBUG] [net.minecraftforge.coremod.CoreModEngine/COREMOD]: CoreMod loaded successfully
+[244月2024 20:56:05.222] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@6cfbbff7 to Target : CLASS {Lnet/minecraft/world/level/biome/Biome;} {} {V}
+[244月2024 20:56:05.224] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@3b7c80c6 to Target : CLASS {Lnet/minecraft/world/level/levelgen/structure/Structure;} {} {V}
+[244月2024 20:56:05.224] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@3b2e5c0d to Target : CLASS {Lnet/minecraft/world/effect/MobEffectInstance;} {} {V}
+[244月2024 20:56:05.224] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@7499eac7 to Target : CLASS {Lnet/minecraft/world/level/block/LiquidBlock;} {} {V}
+[244月2024 20:56:05.225] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@5438c17a to Target : CLASS {Lnet/minecraft/world/item/BucketItem;} {} {V}
+[244月2024 20:56:05.225] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@b9d018b to Target : CLASS {Lnet/minecraft/world/level/block/FlowerPotBlock;} {} {V}
+[244月2024 20:56:05.225] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@429aeac1 to Target : CLASS {Lnet/minecraft/world/item/ItemStack;} {} {V}
+[244月2024 20:56:05.225] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@79eeff87 to Target : CLASS {Lnet/minecraft/world/level/Explosion;} {} {V}
+[244月2024 20:56:05.225] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@6b4fc2d1 to Target : CLASS {Lnet/minecraft/world/level/Explosion;} {} {V}
+[244月2024 20:56:05.225] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@8bd076a to Target : CLASS {Lnet/minecraft/world/entity/monster/Evoker$EvokerSummonSpellGoal;} {} {V}
+[244月2024 20:56:05.226] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@8bd076a to Target : CLASS {Lnet/minecraft/world/entity/animal/frog/Tadpole;} {} {V}
+[244月2024 20:56:05.226] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@8bd076a to Target : CLASS {Lnet/minecraft/world/level/levelgen/structure/structures/OceanRuinPieces$OceanRuinPiece;} {} {V}
+[244月2024 20:56:05.226] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@8bd076a to Target : CLASS {Lnet/minecraft/world/entity/monster/Strider;} {} {V}
+[244月2024 20:56:05.226] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@8bd076a to Target : CLASS {Lnet/minecraft/world/level/NaturalSpawner;} {} {V}
+[244月2024 20:56:05.226] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@8bd076a to Target : CLASS {Lnet/minecraft/world/entity/ai/village/VillageSiege;} {} {V}
+[244月2024 20:56:05.226] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@8bd076a to Target : CLASS {Lnet/minecraft/world/level/levelgen/PatrolSpawner;} {} {V}
+[244月2024 20:56:05.227] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@8bd076a to Target : CLASS {Lnet/minecraft/world/entity/monster/Zombie;} {} {V}
+[244月2024 20:56:05.227] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@8bd076a to Target : CLASS {Lnet/minecraft/world/entity/EntityType;} {} {V}
+[244月2024 20:56:05.227] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@8bd076a to Target : CLASS {Lnet/minecraft/world/entity/raid/Raid;} {} {V}
+[244月2024 20:56:05.227] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@8bd076a to Target : CLASS {Lnet/minecraft/world/entity/npc/CatSpawner;} {} {V}
+[244月2024 20:56:05.227] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@8bd076a to Target : CLASS {Lnet/minecraft/server/commands/RaidCommand;} {} {V}
+[244月2024 20:56:05.227] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@8bd076a to Target : CLASS {Lnet/minecraft/world/entity/animal/horse/SkeletonTrapGoal;} {} {V}
+[244月2024 20:56:05.228] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@8bd076a to Target : CLASS {Lnet/minecraft/world/entity/monster/Spider;} {} {V}
+[244月2024 20:56:05.228] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@8bd076a to Target : CLASS {Lnet/minecraft/world/entity/npc/Villager;} {} {V}
+[244月2024 20:56:05.228] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@8bd076a to Target : CLASS {Lnet/minecraft/world/level/levelgen/structure/structures/OceanMonumentPieces$OceanMonumentPiece;} {} {V}
+[244月2024 20:56:05.228] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@8bd076a to Target : CLASS {Lnet/minecraft/world/entity/monster/ZombieVillager;} {} {V}
+[244月2024 20:56:05.228] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@8bd076a to Target : CLASS {Lnet/minecraft/world/level/levelgen/PhantomSpawner;} {} {V}
+[244月2024 20:56:05.228] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@8bd076a to Target : CLASS {Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructureTemplate;} {} {V}
+[244月2024 20:56:05.228] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@8bd076a to Target : CLASS {Lnet/minecraft/server/commands/SummonCommand;} {} {V}
+[244月2024 20:56:05.229] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@8bd076a to Target : CLASS {Lnet/minecraft/world/level/levelgen/structure/structures/SwampHutPiece;} {} {V}
+[244月2024 20:56:05.229] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@8bd076a to Target : CLASS {Lnet/minecraft/world/level/levelgen/structure/structures/WoodlandMansionPieces$WoodlandMansionPiece;} {} {V}
+[244月2024 20:56:05.229] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initialized transformers for transformation service fml
+[244月2024 20:56:05.274] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:ModLauncher Root Container(ModLauncher:4f56a0a2)]
+[244月2024 20:56:05.275] [main/DEBUG] [mixin/]: Registering mixin config: vmr.mixins.json
+[244月2024 20:56:05.352] [main/DEBUG] [mixin/]: Compatibility level JAVA_8 specified by vmr.mixins.json is lower than the default level supported by the current mixin service (JAVA_16).
+[244月2024 20:56:05.354] [main/DEBUG] [mixin/]: Processing launch tasks for PlatformAgent[MixinPlatformAgentDefault:ModLauncher Root Container(ModLauncher:4f56a0a2)]
+[244月2024 20:56:05.355] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(minecraft)
+[244月2024 20:56:05.355] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(minecraft)
+[244月2024 20:56:05.355] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(minecraft)
+[244月2024 20:56:05.355] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(minecraft)
+[244月2024 20:56:05.355] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(minecraft)
+[244月2024 20:56:05.356] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(minecraft)]
+[244月2024 20:56:05.356] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(forge)
+[244月2024 20:56:05.356] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(forge)
+[244月2024 20:56:05.356] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(forge)
+[244月2024 20:56:05.356] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(forge)
+[244月2024 20:56:05.356] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(forge)
+[244月2024 20:56:05.357] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(forge)]
+[244月2024 20:56:05.357] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(vmr)
+[244月2024 20:56:05.357] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(vmr)
+[244月2024 20:56:05.357] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(vmr)
+[244月2024 20:56:05.357] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(vmr)
+[244月2024 20:56:05.357] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(vmr)
+[244月2024 20:56:05.357] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(vmr)]
+[244月2024 20:56:05.358] [main/DEBUG] [mixin/]: inject() running with 4 agents
+[244月2024 20:56:05.358] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:ModLauncher Root Container(ModLauncher:4f56a0a2)]
+[244月2024 20:56:05.358] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(minecraft)]
+[244月2024 20:56:05.359] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(forge)]
+[244月2024 20:56:05.359] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(vmr)]
+[244月2024 20:56:05.359] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forge_userdev_client' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, E:\.gradle\caches\forge_gradle\assets, --assetIndex, 12]
+[244月2024 20:56:05.453] [main/DEBUG] [mixin/]: Error cleaning class output directory: .mixin.out
+[244月2024 20:56:05.456] [main/DEBUG] [mixin/]: Preparing mixins for MixinEnvironment[DEFAULT]
+[244月2024 20:56:05.456] [main/DEBUG] [mixin/]: Selecting config vmr.mixins.json
+[244月2024 20:56:05.467] [main/WARN] [mixin/]: Reference map 'vmr.refmap.json' for vmr.mixins.json could not be read. If this is a development environment you can ignore this message
+[244月2024 20:56:05.469] [main/DEBUG] [mixin/]: Preparing vmr.mixins.json (2)
+[244月2024 20:56:05.587] [main/DEBUG] [mixin/]: Registering new injector for @Inject with org.spongepowered.asm.mixin.injection.struct.CallbackInjectionInfo
+[244月2024 20:56:05.589] [main/DEBUG] [mixin/]: Registering new injector for @ModifyArg with org.spongepowered.asm.mixin.injection.struct.ModifyArgInjectionInfo
+[244月2024 20:56:05.590] [main/DEBUG] [mixin/]: Registering new injector for @ModifyArgs with org.spongepowered.asm.mixin.injection.struct.ModifyArgsInjectionInfo
+[244月2024 20:56:05.593] [main/DEBUG] [mixin/]: Registering new injector for @Redirect with org.spongepowered.asm.mixin.injection.struct.RedirectInjectionInfo
+[244月2024 20:56:05.595] [main/DEBUG] [mixin/]: Registering new injector for @ModifyVariable with org.spongepowered.asm.mixin.injection.struct.ModifyVariableInjectionInfo
+[244月2024 20:56:05.596] [main/DEBUG] [mixin/]: Registering new injector for @ModifyConstant with org.spongepowered.asm.mixin.injection.struct.ModifyConstantInjectionInfo
+[244月2024 20:56:06.871] [main/DEBUG] [io.netty.util.internal.logging.InternalLoggerFactory/]: Using SLF4J as the default logging framework
+[244月2024 20:56:06.892] [main/DEBUG] [io.netty.util.ResourceLeakDetector/]: -Dio.netty.leakDetection.level: simple
+[244月2024 20:56:06.892] [main/DEBUG] [io.netty.util.ResourceLeakDetector/]: -Dio.netty.leakDetection.targetRecords: 4
+[244月2024 20:56:07.320] [main/WARN] [oshi.util.FileUtil/]: Configuration conflict: there is more than one oshi.properties file on the classpath: [jar:file:///E:/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.properties, jar:file:/E:/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.properties, jar:file:/E:/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.properties, jar:file:///E:/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.properties, jar:file:/E:/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.properties, jar:file:/E:/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.properties, jar:file:///E:/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.properties, jar:file:/E:/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.properties, jar:file:/E:/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.properties, jar:file:///E:/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.properties, jar:file:/E:/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.properties, jar:file:/E:/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.properties]
+[244月2024 20:56:07.791] [main/WARN] [oshi.util.FileUtil/]: Configuration conflict: there is more than one oshi.architecture.properties file on the classpath: [jar:file:///E:/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:/E:/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:/E:/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:///E:/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:/E:/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:/E:/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:///E:/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:/E:/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:/E:/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:///E:/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:/E:/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:/E:/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties]
+[244月2024 20:56:08.947] [pool-4-thread-1/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/entity/EntityType
+[244月2024 20:56:09.692] [pool-4-thread-1/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/block/LiquidBlock
+[244月2024 20:56:09.901] [pool-4-thread-1/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/block/FlowerPotBlock
+[244月2024 20:56:10.517] [pool-4-thread-1/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/item/ItemStack
+[244月2024 20:56:10.537] [pool-4-thread-1/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/biome/Biome
+[244月2024 20:56:11.141] [pool-4-thread-1/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/entity/animal/frog/Tadpole
+[244月2024 20:56:11.192] [pool-4-thread-1/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/item/BucketItem
+[244月2024 20:56:12.114] [pool-4-thread-1/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/entity/monster/Spider
+[244月2024 20:56:12.165] [pool-4-thread-1/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/entity/monster/Zombie
+[244月2024 20:56:12.205] [pool-4-thread-1/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/entity/monster/ZombieVillager
+[244月2024 20:56:12.212] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 198 Datafixer optimizations took 191 milliseconds
+[244月2024 20:56:12.252] [pool-4-thread-1/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/entity/monster/Evoker$EvokerSummonSpellGoal
+[244月2024 20:56:12.407] [pool-4-thread-1/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/entity/animal/horse/SkeletonTrapGoal
+[244月2024 20:56:12.425] [pool-4-thread-1/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/entity/monster/Strider
+[244月2024 20:56:12.588] [pool-4-thread-1/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/entity/npc/Villager
+[244月2024 20:56:12.683] [pool-4-thread-1/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/effect/MobEffectInstance
+[244月2024 20:56:13.379] [pool-4-thread-1/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/levelgen/structure/Structure
+[244月2024 20:56:13.417] [pool-4-thread-1/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/levelgen/structure/structures/OceanRuinPieces$OceanRuinPiece
+[244月2024 20:56:13.433] [pool-4-thread-1/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/levelgen/structure/structures/SwampHutPiece
+[244月2024 20:56:13.442] [pool-4-thread-1/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/levelgen/structure/structures/OceanMonumentPieces$OceanMonumentPiece
+[244月2024 20:56:13.460] [pool-4-thread-1/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/levelgen/structure/structures/WoodlandMansionPieces$WoodlandMansionPiece
+[244月2024 20:56:13.809] [pool-4-thread-1/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Creating vanilla freeze snapshot
+[244月2024 20:56:13.811] [pool-4-thread-1/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:block Sync: VANILLA -> ACTIVE
+[244月2024 20:56:13.821] [pool-4-thread-1/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:fluid Sync: VANILLA -> ACTIVE
+[244月2024 20:56:13.821] [pool-4-thread-1/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item Sync: VANILLA -> ACTIVE
+[244月2024 20:56:13.828] [pool-4-thread-1/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:mob_effect Sync: VANILLA -> ACTIVE
+[244月2024 20:56:13.829] [pool-4-thread-1/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event Sync: VANILLA -> ACTIVE
+[244月2024 20:56:13.838] [pool-4-thread-1/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:potion Sync: VANILLA -> ACTIVE
+[244月2024 20:56:13.839] [pool-4-thread-1/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:enchantment Sync: VANILLA -> ACTIVE
+[244月2024 20:56:13.839] [pool-4-thread-1/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:entity_type Sync: VANILLA -> ACTIVE
+[244月2024 20:56:13.840] [pool-4-thread-1/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:block_entity_type Sync: VANILLA -> ACTIVE
+[244月2024 20:56:13.841] [pool-4-thread-1/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:particle_type Sync: VANILLA -> ACTIVE
+[244月2024 20:56:13.842] [pool-4-thread-1/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:menu Sync: VANILLA -> ACTIVE
+[244月2024 20:56:13.842] [pool-4-thread-1/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:painting_variant Sync: VANILLA -> ACTIVE
+[244月2024 20:56:13.842] [pool-4-thread-1/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:recipe_type Sync: VANILLA -> ACTIVE
+[244月2024 20:56:13.843] [pool-4-thread-1/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:recipe_serializer Sync: VANILLA -> ACTIVE
+[244月2024 20:56:13.843] [pool-4-thread-1/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:attribute Sync: VANILLA -> ACTIVE
+[244月2024 20:56:13.843] [pool-4-thread-1/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:stat_type Sync: VANILLA -> ACTIVE
+[244月2024 20:56:13.844] [pool-4-thread-1/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:command_argument_type Sync: VANILLA -> ACTIVE
+[244月2024 20:56:13.844] [pool-4-thread-1/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:villager_profession Sync: VANILLA -> ACTIVE
+[244月2024 20:56:13.844] [pool-4-thread-1/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:point_of_interest_type Sync: VANILLA -> ACTIVE
+[244月2024 20:56:13.847] [pool-4-thread-1/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:memory_module_type Sync: VANILLA -> ACTIVE
+[244月2024 20:56:13.847] [pool-4-thread-1/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sensor_type Sync: VANILLA -> ACTIVE
+[244月2024 20:56:13.848] [pool-4-thread-1/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:schedule Sync: VANILLA -> ACTIVE
+[244月2024 20:56:13.848] [pool-4-thread-1/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:activity Sync: VANILLA -> ACTIVE
+[244月2024 20:56:13.848] [pool-4-thread-1/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:worldgen/carver Sync: VANILLA -> ACTIVE
+[244月2024 20:56:13.848] [pool-4-thread-1/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:worldgen/feature Sync: VANILLA -> ACTIVE
+[244月2024 20:56:13.849] [pool-4-thread-1/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:chunk_status Sync: VANILLA -> ACTIVE
+[244月2024 20:56:13.849] [pool-4-thread-1/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:worldgen/block_state_provider_type Sync: VANILLA -> ACTIVE
+[244月2024 20:56:13.849] [pool-4-thread-1/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:worldgen/foliage_placer_type Sync: VANILLA -> ACTIVE
+[244月2024 20:56:13.850] [pool-4-thread-1/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:worldgen/tree_decorator_type Sync: VANILLA -> ACTIVE
+[244月2024 20:56:13.850] [pool-4-thread-1/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:worldgen/biome Sync: VANILLA -> ACTIVE
+[244月2024 20:56:13.855] [pool-4-thread-1/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Vanilla freeze snapshot created
+[244月2024 20:56:14.018] [Render thread/DEBUG] [mixin/]: Mixing MinecraftMixin from vmr.mixins.json into net.minecraft.client.Minecraft
+[244月2024 20:56:14.023] [Render thread/DEBUG] [mixin/]: vmr.mixins.json:MinecraftMixin: Class version 61 required is higher than the class version supported by the current version of Mixin (JAVA_8 supports class version 52)
+[244月2024 20:56:14.025] [Render thread/DEBUG] [mixin/]: Renaming synthetic method lambda$crash$3(Lnet/minecraft/client/Minecraft;Lcn/ksmcbrigade/vmr/module/Module;)V to md2b69bd$lambda$crash$3$0 in vmr.mixins.json:MinecraftMixin
+[244月2024 20:56:14.025] [Render thread/DEBUG] [mixin/]: Renaming synthetic method lambda$crash$2(Lcn/ksmcbrigade/vmr/module/Module;)Z to md2b69bd$lambda$crash$2$1 in vmr.mixins.json:MinecraftMixin
+[244月2024 20:56:14.026] [Render thread/DEBUG] [mixin/]: Renaming synthetic method lambda$close$1(Lnet/minecraft/client/Minecraft;Lcn/ksmcbrigade/vmr/module/Module;)V to md2b69bd$lambda$close$1$2 in vmr.mixins.json:MinecraftMixin
+[244月2024 20:56:14.026] [Render thread/DEBUG] [mixin/]: Renaming synthetic method lambda$close$0(Lcn/ksmcbrigade/vmr/module/Module;)Z to md2b69bd$lambda$close$0$3 in vmr.mixins.json:MinecraftMixin
+[244月2024 20:56:14.133] [Render thread/DEBUG] [mixin/]: Mixing ScreenMixin from vmr.mixins.json into net.minecraft.client.gui.screens.Screen
+[244月2024 20:56:14.134] [Render thread/DEBUG] [mixin/]: vmr.mixins.json:ScreenMixin: Class version 61 required is higher than the class version supported by the current version of Mixin (JAVA_8 supports class version 52)
+[244月2024 20:56:14.135] [Render thread/DEBUG] [mixin/]: Renaming synthetic method lambda$key$3(ILcn/ksmcbrigade/vmr/module/Module;)V to md2b69bd$lambda$key$3$0 in vmr.mixins.json:ScreenMixin
+[244月2024 20:56:14.135] [Render thread/DEBUG] [mixin/]: Renaming synthetic method lambda$key$2(Lcn/ksmcbrigade/vmr/module/Module;)Z to md2b69bd$lambda$key$2$1 in vmr.mixins.json:ScreenMixin
+[244月2024 20:56:14.135] [Render thread/DEBUG] [mixin/]: Renaming synthetic method lambda$tick$1(Lnet/minecraft/client/Minecraft;Lcn/ksmcbrigade/vmr/module/Module;)V to md2b69bd$lambda$tick$1$2 in vmr.mixins.json:ScreenMixin
+[244月2024 20:56:14.135] [Render thread/DEBUG] [mixin/]: Renaming synthetic method lambda$tick$0(Lcn/ksmcbrigade/vmr/module/Module;)Z to md2b69bd$lambda$tick$0$3 in vmr.mixins.json:ScreenMixin
+[244月2024 20:56:14.345] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/E:/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.4-49.0.42_mapped_official_1.20.4/forge-1.20.4-49.0.42_mapped_official_1.20.4-recomp.jar%230!/assets/.mcassetsroot' uses unexpected schema
+[244月2024 20:56:14.345] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/E:/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.4-49.0.42_mapped_official_1.20.4/forge-1.20.4-49.0.42_mapped_official_1.20.4-recomp.jar%230!/data/.mcassetsroot' uses unexpected schema
+[244月2024 20:56:14.373] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[244月2024 20:56:14.383] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[244月2024 20:56:14.525] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.2+13
+[244月2024 20:56:14.860] [Render thread/DEBUG] [net.minecraftforge.common.ForgeI18n/CORE]: Loading I18N data entries: 6753
+[244月2024 20:56:14.879] [Render thread/DEBUG] [net.minecraftforge.fml.ModWorkManager/LOADING]: Using 8 threads for parallel mod-loading
+[244月2024 20:56:14.892] [Render thread/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader TransformingClassLoader[TRANSFORMER]@1108136194 - got SecureModuleClassLoader[LAYER PLUGIN]@103433239
+[244月2024 20:56:14.892] [Render thread/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for net.minecraftforge.common.ForgeMod
+[244月2024 20:56:14.899] [Render thread/FATAL] [net.minecraftforge.fml.ModLoader/LOADING]: File D:\MinecraftForgeMod\VapeManagerReborn\build\resources\main constructed 0 mods: [], but had 1 mods specified: [vmr]
+[244月2024 20:56:14.899] [Render thread/FATAL] [net.minecraftforge.fml.ModLoader/LOADING]: The following classes are missing, but are reported in the mods.toml: [vmr]
+[244月2024 20:56:14.899] [Render thread/FATAL] [net.minecraftforge.fml.ModLoader/LOADING]: The following mods are missing, but have classes in the jar: []
+[244月2024 20:56:14.899] [Render thread/FATAL] [net.minecraftforge.fml.ModLoader/CORE]: Failed to initialize mod containers
+net.minecraftforge.fml.ModLoadingException: The Mod File D:\MinecraftForgeMod\VapeManagerReborn\build\resources\main has mods that were not found
+	at net.minecraftforge.fml.ModLoader.buildMods(ModLoader.java:278) ~[fmlcore-1.20.4-49.0.42.jar:1.0]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260) ~[?:?]
+	at java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616) ~[?:?]
+	at java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622) ~[?:?]
+	at java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627) ~[?:?]
+	at net.minecraftforge.fml.ModLoader.gatherAndInitializeMods(ModLoader.java:171) ~[fmlcore-1.20.4-49.0.42.jar:1.0]
+	at net.minecraftforge.client.loading.ClientModLoader.lambda$begin$1(ClientModLoader.java:52) ~[forge-1.20.4-49.0.42_mapped_official_1.20.4-recomp.jar:?]
+	at net.minecraftforge.client.loading.ClientModLoader.lambda$createRunnableWithCatch$4(ClientModLoader.java:72) ~[forge-1.20.4-49.0.42_mapped_official_1.20.4-recomp.jar:?]
+	at net.minecraftforge.client.loading.ClientModLoader.begin(ClientModLoader.java:52) ~[forge-1.20.4-49.0.42_mapped_official_1.20.4-recomp.jar:?]
+	at net.minecraft.client.Minecraft.<init>(Minecraft.java:484) ~[forge-1.20.4-49.0.42_mapped_official_1.20.4-recomp.jar:?]
+	at net.minecraft.client.main.Main.main(Main.java:196) ~[forge-1.20.4-49.0.42_mapped_official_1.20.4-recomp.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:91) ~[fmlloader-1.20.4-49.0.42.jar:?]
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.lambda$makeService$0(CommonLaunchHandler.java:75) ~[fmlloader-1.20.4-49.0.42.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) ~[modlauncher-10.1.2.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:74) ~[modlauncher-10.1.2.jar:?]
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:114) ~[modlauncher-10.1.2.jar:?]
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:73) ~[modlauncher-10.1.2.jar:?]
+	at cpw.mods.modlauncher.BootstrapEntry.main(BootstrapEntry.java:17) ~[modlauncher-10.1.2.jar:?]
+	at net.minecraftforge.bootstrap.Bootstrap.moduleMain(Bootstrap.java:188) ~[bootstrap-2.1.0.jar!/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at net.minecraftforge.bootstrap.Bootstrap.bootstrapMain(Bootstrap.java:133) ~[bootstrap-2.1.0.jar!/:?]
+	at net.minecraftforge.bootstrap.Bootstrap.start(Bootstrap.java:53) ~[bootstrap-2.1.0.jar!/:?]
+	at net.minecraftforge.bootstrap.ForgeBootstrap.main(ForgeBootstrap.java:19) ~[bootstrap-2.1.0.jar!/:?]
+[244月2024 20:56:15.163] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.sound.SoundEngineLoadEvent to a broken mod state
+[244月2024 20:56:15.381] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.RegisterColorHandlersEvent$Block to a broken mod state
+[244月2024 20:56:15.386] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.RegisterColorHandlersEvent$Item to a broken mod state
+[244月2024 20:56:15.642] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.RenderLevelStageEvent$RegisterStageEvent to a broken mod state
+[244月2024 20:56:15.752] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.RegisterParticleProvidersEvent to a broken mod state
+[244月2024 20:56:15.853] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.RegisterClientReloadListenersEvent to a broken mod state
+[244月2024 20:56:15.854] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.EntityRenderersEvent$RegisterLayerDefinitions to a broken mod state
+[244月2024 20:56:15.854] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.EntityRenderersEvent$RegisterRenderers to a broken mod state
+[244月2024 20:56:15.857] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.RegisterTextureAtlasSpriteLoadersEvent to a broken mod state
+[244月2024 20:56:15.858] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.RegisterClientTooltipComponentFactoriesEvent to a broken mod state
+[244月2024 20:56:15.859] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.RegisterEntitySpectatorShadersEvent to a broken mod state
+[244月2024 20:56:15.859] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.RegisterKeyMappingsEvent to a broken mod state
+[244月2024 20:56:15.863] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.RegisterRecipeBookCategoriesEvent to a broken mod state
+[244月2024 20:56:15.874] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.RegisterGuiOverlaysEvent to a broken mod state
+[244月2024 20:56:15.880] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.RegisterDimensionSpecialEffectsEvent to a broken mod state
+[244月2024 20:56:15.882] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.RegisterNamedRenderTypesEvent to a broken mod state
+[244月2024 20:56:15.884] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.RegisterColorHandlersEvent$ColorResolvers to a broken mod state
+[244月2024 20:56:15.885] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.RegisterItemDecorationsEvent to a broken mod state
+[244月2024 20:56:15.896] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.RegisterPresetEditorsEvent to a broken mod state
+[244月2024 20:56:16.183] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla
+[244月2024 20:56:16.255] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.ModelEvent$RegisterGeometryLoaders to a broken mod state
+[244月2024 20:56:16.592] [Worker-Main-6/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.1.04.hex, loading
+[244月2024 20:56:17.695] [Worker-Main-6/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.ModelEvent$RegisterAdditional to a broken mod state
+[244月2024 20:56:18.309] [Worker-Main-6/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.ModelEvent$ModifyBakingResult to a broken mod state
+[244月2024 20:56:18.386] [Render thread/DEBUG] [net.minecraftforge.common.ForgeI18n/CORE]: Loading I18N data entries: 6540
+[244月2024 20:56:18.411] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
+[244月2024 20:56:18.411] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[244月2024 20:56:18.411] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.generic.wind_burst
+[244月2024 20:56:18.601] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on 扬声器 (Realtek High Definition Audio)
+[244月2024 20:56:18.601] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[244月2024 20:56:18.601] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.sound.SoundEngineLoadEvent to a broken mod state
+[244月2024 20:56:18.709] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
+[244月2024 20:56:18.800] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.TextureStitchEvent$Post to a broken mod state
+[244月2024 20:56:18.800] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[244月2024 20:56:18.802] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.TextureStitchEvent$Post to a broken mod state
+[244月2024 20:56:18.802] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[244月2024 20:56:18.805] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.TextureStitchEvent$Post to a broken mod state
+[244月2024 20:56:18.805] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[244月2024 20:56:18.808] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.TextureStitchEvent$Post to a broken mod state
+[244月2024 20:56:18.808] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[244月2024 20:56:18.836] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.TextureStitchEvent$Post to a broken mod state
+[244月2024 20:56:18.836] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[244月2024 20:56:18.838] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.TextureStitchEvent$Post to a broken mod state
+[244月2024 20:56:18.838] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[244月2024 20:56:18.840] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.TextureStitchEvent$Post to a broken mod state
+[244月2024 20:56:18.840] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[244月2024 20:56:18.842] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.TextureStitchEvent$Post to a broken mod state
+[244月2024 20:56:18.842] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[244月2024 20:56:18.844] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.TextureStitchEvent$Post to a broken mod state
+[244月2024 20:56:18.844] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.ModelEvent$BakingCompleted to a broken mod state
+[244月2024 20:56:18.962] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.EntityRenderersEvent$CreateSkullModels to a broken mod state
+[244月2024 20:56:18.963] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.EntityRenderersEvent$CreateSkullModels to a broken mod state
+[244月2024 20:56:19.049] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.EntityRenderersEvent$CreateSkullModels to a broken mod state
+[244月2024 20:56:19.051] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.EntityRenderersEvent$CreateSkullModels to a broken mod state
+[244月2024 20:56:19.051] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.EntityRenderersEvent$CreateSkullModels to a broken mod state
+[244月2024 20:56:19.054] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.EntityRenderersEvent$CreateSkullModels to a broken mod state
+[244月2024 20:56:19.060] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.EntityRenderersEvent$CreateSkullModels to a broken mod state
+[244月2024 20:56:19.061] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.EntityRenderersEvent$CreateSkullModels to a broken mod state
+[244月2024 20:56:19.066] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.EntityRenderersEvent$CreateSkullModels to a broken mod state
+[244月2024 20:56:19.066] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.EntityRenderersEvent$CreateSkullModels to a broken mod state
+[244月2024 20:56:19.067] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.EntityRenderersEvent$CreateSkullModels to a broken mod state
+[244月2024 20:56:19.070] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.EntityRenderersEvent$CreateSkullModels to a broken mod state
+[244月2024 20:56:19.075] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.EntityRenderersEvent$CreateSkullModels to a broken mod state
+[244月2024 20:56:19.076] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.EntityRenderersEvent$CreateSkullModels to a broken mod state
+[244月2024 20:56:19.077] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.EntityRenderersEvent$CreateSkullModels to a broken mod state
+[244月2024 20:56:19.078] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.EntityRenderersEvent$CreateSkullModels to a broken mod state
+[244月2024 20:56:19.079] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.EntityRenderersEvent$CreateSkullModels to a broken mod state
+[244月2024 20:56:19.080] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.EntityRenderersEvent$CreateSkullModels to a broken mod state
+[244月2024 20:56:19.082] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.EntityRenderersEvent$CreateSkullModels to a broken mod state
+[244月2024 20:56:19.088] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.EntityRenderersEvent$CreateSkullModels to a broken mod state
+[244月2024 20:56:19.089] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.EntityRenderersEvent$CreateSkullModels to a broken mod state
+[244月2024 20:56:19.090] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.EntityRenderersEvent$AddLayers to a broken mod state
+[244月2024 20:56:19.495] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[244月2024 20:56:20.010] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.RegisterShadersEvent to a broken mod state
+[244月2024 20:56:20.064] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[244月2024 20:56:20.080] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.TextureStitchEvent$Post to a broken mod state
+[244月2024 20:56:20.080] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[244月2024 20:56:20.083] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.TextureStitchEvent$Post to a broken mod state
+[244月2024 20:56:20.083] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[244月2024 20:56:20.085] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.TextureStitchEvent$Post to a broken mod state
+[244月2024 20:56:20.085] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
+[244月2024 20:56:20.107] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.TextureStitchEvent$Post to a broken mod state
+[244月2024 20:56:20.284] [Render thread/DEBUG] [net.minecraftforge.common.ForgeI18n/CORE]: Loading I18N data entries: 6753
+[244月2024 20:56:20.336] [Render thread/WARN] [oshi.util.FileUtil/]: Configuration conflict: there is more than one oshi.architecture.properties file on the classpath: [jar:file:///E:/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:/E:/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:/E:/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:///E:/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:/E:/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:/E:/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:///E:/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:/E:/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:/E:/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:///E:/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:/E:/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties, jar:file:/E:/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.4.5/943ba26de047eb6b28fff47f5ee939a34eb5fc8e/oshi-core-6.4.5.jar!/oshi.architecture.properties]
+[244月2024 20:56:20.402] [Render thread/ERROR] [net.minecraft.CrashReport/]: Negative index in crash report handler (29/31)
+[244月2024 20:56:20.434] [Render thread/FATAL] [net.minecraftforge.client.loading.ClientModLoader/]: Crash report saved to .\crash-reports\crash-2024-04-24_20.56.20-fml.txt

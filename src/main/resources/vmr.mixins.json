@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "cn.ksmcbrigade.vmr.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "vmr.refmap.json",
+  "mixins": [
+  ],
+  "client": [
+    "AccessibilityOptionsScreenMixin",
+    "MinecraftMixin",
+    "ScreenMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

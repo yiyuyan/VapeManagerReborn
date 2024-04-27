@@ -1,0 +1,17 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="runData" type="Application" factoryName="Application" singleton="true">
+    <envs>
+      <env name="MOD_CLASSES" value="vmr%%$PROJECT_DIR$/../VapeManagerReborn\build\resources\main;vmr%%$PROJECT_DIR$/../VapeManagerReborn\build\classes\java\main" />
+      <env name="MCP_MAPPINGS" value="official_1.20.4" />
+    </envs>
+    <option name="MAIN_CLASS_NAME" value="net.minecraftforge.bootstrap.ForgeBootstrap" />
+    <module name="VapeManagerReborn" />
+    <option name="PROGRAM_PARAMETERS" value="--launchTarget forge_userdev_data --assetIndex 12 --assetsDir E:\.gradle\caches\forge_gradle\assets --gameDir . --mod vmr --all --output D:\MinecraftForgeMod\VapeManagerReborn\src\generated\resources --existing D:\MinecraftForgeMod\VapeManagerReborn\src\main\resources --mixin.config vmr.mixins.json" />
+    <option name="VM_PARAMETERS" value="-Dforge.logging.console.level=debug -Dforge.logging.markers=REGISTRIES -Dnet.minecraftforge.gradle.GradleStart.srg.srg-mcp=D:\MinecraftForgeMod\VapeManagerReborn\build\createSrgToMcp\output.srg -Dmixin.env.remapRefMap=true -Dmixin.env.refMapRemappingFile=D:\MinecraftForgeMod\VapeManagerReborn\build\createSrgToMcp\output.srg -Djava.net.preferIPv6Addresses=system" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../VapeManagerReborn\run-data" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+      <option name="Gradle.BeforeRunTask" enabled="true" tasks=":prepareRunDataCompile" externalProjectPath="$PROJECT_DIR$" />
+    </method>
+  </configuration>
+</component>
