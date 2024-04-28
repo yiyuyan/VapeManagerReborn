@@ -2,10 +2,11 @@ package cn.ksmcbrigade.vmr.module;
 
 import cn.ksmcbrigade.vmr.VapeManagerReborn;
 import cn.ksmcbrigade.vmr.uitls.JNAUtils;
+import cn.ksmcbrigade.vmr.uitls.ModuleUtils;
+import cn.ksmcbrigade.vmr.uitls.OtherUtils;
 import com.google.gson.JsonObject;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.AccessibilityOptionsScreen;
-import net.minecraft.client.gui.screens.ChatScreen;
 import net.minecraft.network.chat.Component;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.InputEvent;
@@ -72,7 +73,7 @@ public class HacksEventHandler {
 
         Minecraft MC = Minecraft.getInstance();
 
-        if(JNAUtils.isPressed(KeyEvent.VK_V)){
+        if(JNAUtils.isPressed(VapeManagerReborn.ScreenKey) && MC.screen!=null && !OtherUtils.hasEditBox(MC.screen.getClass())){
             MC.setScreen(new AccessibilityOptionsScreen(MC.screen,MC.options));
         }
 

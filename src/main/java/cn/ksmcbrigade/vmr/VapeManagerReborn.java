@@ -6,6 +6,7 @@ import cn.ksmcbrigade.vmr.BuiltInModules.RainbowGui;
 import cn.ksmcbrigade.vmr.module.Module;
 import cn.ksmcbrigade.vmr.uitls.ModuleUtils;
 import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.KeyMapping;
@@ -16,6 +17,7 @@ import net.minecraftforge.fml.common.Mod;
 import org.lwjgl.glfw.GLFW;
 import org.slf4j.Logger;
 
+import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -28,9 +30,12 @@ public class VapeManagerReborn {
     public static boolean init = false;
 
     public static File configFile = new File("config/vmr/enabledList.json");
+    public static File KeyboardConfigFile = new File("config/vmr/keys.json");
     public static ArrayList<Module> modules = new ArrayList<>();
     public static final String MODID = "vmr";
     private static final Logger LOGGER = LogUtils.getLogger();
+
+    public static int ScreenKey = KeyEvent.VK_V;
 
     public static KeyMapping screenKey = new KeyMapping("options.accessibility.title", GLFW.GLFW_KEY_V,"key.categories.gameplay");
 
@@ -75,6 +80,7 @@ public class VapeManagerReborn {
         if(!configFile.exists()){
             Files.writeString(configFile.toPath(),"[]");
         }
+
         JsonArray array = JsonParser.parseString(Files.readString(configFile.toPath())).getAsJsonArray();
         array.forEach(k -> {
             Module module = ModuleUtils.get(k.getAsString());
@@ -88,6 +94,26 @@ public class VapeManagerReborn {
         });
 
         ModuleUtils.save();
+
+        if(!KeyboardConfigFile.exists()){
+            JsonObject keysMap = new JsonObject();
+            keysMap.addProperty("NModuleConfiguration",ScreenKey);
+            modules.forEach(e -> keysMap.addProperty(e.name,e.key));
+            Files.writeString(KeyboardConfigFile.toPath(),keysMap.toString());
+        }
+
+        JsonObject keysMap = JsonParser.parseString(Files.readString(KeyboardConfigFile.toPath())).getAsJsonObject();
+
+        ScreenKey = keysMap.get("NModuleConfiguration").getAsInt();
+
+        keysMap.keySet().forEach(k -> {
+            Module module = ModuleUtils.get(k);
+            if(module!=null){
+                module.setKey(keysMap.get(k).getAsInt());
+            }
+        });
+
+        ModuleUtils.saveKeys();
 
         init = true;
 

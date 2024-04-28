@@ -3,9 +3,12 @@ package cn.ksmcbrigade.vmr.uitls;
 import cn.ksmcbrigade.vmr.VapeManagerReborn;
 import cn.ksmcbrigade.vmr.module.Module;
 import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
+import net.minecraft.client.gui.components.EditBox;
 
 import javax.annotation.Nullable;
 import java.io.IOException;
+import java.lang.reflect.Field;
 import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -82,5 +85,12 @@ public class ModuleUtils {
         JsonArray modules = new JsonArray();
         VapeManagerReborn.modules.stream().filter(m -> m.enabled).toList().forEach(m -> modules.add(m.name));
         Files.writeString(VapeManagerReborn.configFile.toPath(),modules.toString());
+    }
+
+    public static void saveKeys() throws IOException{
+        JsonObject keysMap = new JsonObject();
+        keysMap.addProperty("NModuleConfiguration",VapeManagerReborn.ScreenKey);
+        VapeManagerReborn.modules.forEach(e -> keysMap.addProperty(e.name,e.key));
+        Files.writeString(VapeManagerReborn.KeyboardConfigFile.toPath(),keysMap.toString());
     }
 }

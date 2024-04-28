@@ -15,6 +15,8 @@ public class JNAUtils {
         //user32
         short GetAsyncKeyState(int vKey);
         WinDef.HDC GetDC(WinDef.HWND hWnd);
+        boolean GetCursorPos(WinDef.POINT lpPoint);
+        void mouse_event(int dwFlags, int dx, int dy, int dwData, int dwExtraInfo);
 
         //win user
         WinDef.HDC GetWindowDC(WinDef.HWND hWnd);

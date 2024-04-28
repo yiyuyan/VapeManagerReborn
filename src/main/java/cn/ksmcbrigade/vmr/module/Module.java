@@ -4,12 +4,12 @@ import cn.ksmcbrigade.vmr.uitls.ModuleUtils;
 import com.google.gson.JsonObject;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.resources.language.I18n;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 
 import javax.annotation.Nullable;
 import java.io.File;
-import java.io.IOException;
 
 public class Module {
     public final String name;
@@ -55,7 +55,11 @@ public class Module {
         ModuleUtils.save();
     }
 
-    public String getName(){return this.name;}
+    public String getName(){return I18n.get(this.name);}
+
+    public int getKey() {return key;}
+
+    public void setKey(int key) {this.key = key;}
 
     public Config getConfig() {
         return config;
@@ -66,7 +70,7 @@ public class Module {
     }
 
     public int length(){
-        return this.name.length();
+        return getName().length();
     }
 
     @Override

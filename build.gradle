@@ -6,6 +6,7 @@ buildscript {
     }
     dependencies {
         classpath 'org.spongepowered:mixingradle:0.7-SNAPSHOT'
+        classpath 'com.vanniktech:gradle-maven-publish-plugin:0.28.0'
     }
 }
 
@@ -13,12 +14,14 @@ plugins {
     id 'eclipse'
     id 'idea'
     id 'net.minecraftforge.gradle' version '[6.0,6.2)'
+    id "com.vanniktech.maven.publish" version "0.28.0"
 }
 
 apply plugin: 'org.spongepowered.mixin'
+apply plugin: "com.vanniktech.maven.publish"
 
-group = mod_version
-version = mod_group_id
+group = "io.github.yiyuyan"
+version = mod_version
 
 base {
     archivesName = mod_id
@@ -26,6 +29,54 @@ base {
 
 java {
     toolchain.languageVersion = JavaLanguageVersion.of(17)
+}
+
+import com.vanniktech.maven.publish.SonatypeHost
+
+/*publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId 'cn.ksmcbrigade'
+            artifactId 'VapeManagerReborn'
+            version '1.0'
+
+            from components.java
+        }
+    }
+}*/
+
+mavenPublishing {
+
+    publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL,false)
+
+    signAllPublications()
+
+    pom {
+        name = "VapeManagerReborn"
+        description = "VapeManager library mod in forge 1.20.4.Your can use this package to add modules to Minecraft."
+        inceptionYear = "2024"
+        url = "https://github.com/yiyuyan/VapeManagerReborn"
+        licenses {
+            license {
+                name = "The Apache License, Version 2.0"
+                url = "http://www.apache.org/licenses/LICENSE-2.0.txt"
+                distribution = "http://www.apache.org/licenses/LICENSE-2.0.txt"
+            }
+        }
+        developers {
+            developer {
+                id = "yiyuyan"
+                name = "KSmc_brigade"
+                url = "https://github.com/yiyuyan/"
+                email = "179544143@qq.com"
+            }
+        }
+        scm {
+            url = "https://github.com/yiyuyan/VapeManagerReborn"
+            connection = "scm:git:git://github.com/yiyuyan/VapeManagerReborn.git"
+            developerConnection = "scm:git:ssh://git@github.com/yiyuyan/VapeManagerReborn.git"
+        }
+    }
 }
 
 minecraft {

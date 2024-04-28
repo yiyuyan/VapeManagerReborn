@@ -43,7 +43,7 @@ public class ModulesList extends Module {
             if(color!=null){
                 System.out.println(color.getAsInt());
             }*/
-            pose.drawString(font,mods[i].name,MC.getWindow().getGuiScaledWidth()-font.width(mods[i].name)-2, 2 + i * font.lineHeight,color==null?Color.WHITE.getRGB():color.getAsInt());
+            pose.drawString(font,mods[i].getName(),MC.getWindow().getGuiScaledWidth()-font.width(mods[i].getName())-2, 2 + i * font.lineHeight,color==null?Color.WHITE.getRGB():color.getAsInt());
         }
         //System.out.println("module enabled!!!!!!!!!!!!!!!!!!!!!!!!");
     }
