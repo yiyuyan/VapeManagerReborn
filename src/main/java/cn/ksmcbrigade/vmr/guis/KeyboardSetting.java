@@ -5,7 +5,9 @@ import cn.ksmcbrigade.vmr.module.Module;
 import cn.ksmcbrigade.vmr.uitls.JNAUtils;
 import cn.ksmcbrigade.vmr.uitls.ModuleUtils;
 import cn.ksmcbrigade.vmr.uitls.OtherUtils;
+import com.mojang.blaze3d.platform.InputConstants;
 import com.sun.jna.platform.win32.WinDef;
+import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.Screen;
@@ -56,18 +58,17 @@ public class KeyboardSetting extends Screen {
     public boolean keyPressed(int p_96552_, int p_96553_, int p_96554_) {
         super.keyPressed(p_96552_,p_96553_,p_96554_);
         int key = OtherUtils.convertGLFWKeyToVKKey(p_96552_);
-        if(key!=KeyEvent.VK_UNDEFINED){
-            if(!n){
+        if(key!=KeyEvent.VK_UNDEFINED && !n){
                 try {
                     module.setKey(key);
                     ModuleUtils.saveKeys();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-            }
-            else{
-                VapeManagerReborn.ScreenKey = key;
-            }
+        }
+        if(n){
+            VapeManagerReborn.ScreenKey = p_96552_;
+            VapeManagerReborn.screenKey.setKeyModifierAndCode(VapeManagerReborn.screenKey.getDefaultKeyModifier(), InputConstants.Type.KEYSYM.getOrCreate(VapeManagerReborn.ScreenKey));
         }
         this.onClose();
         return true;

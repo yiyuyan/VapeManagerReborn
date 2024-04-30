@@ -73,7 +73,7 @@ public class HacksEventHandler {
 
         Minecraft MC = Minecraft.getInstance();
 
-        if(JNAUtils.isPressed(VapeManagerReborn.ScreenKey) && MC.screen!=null && !OtherUtils.hasEditBox(MC.screen.getClass())){
+        if(VapeManagerReborn.screenKey.isDown()){
             MC.setScreen(new AccessibilityOptionsScreen(MC.screen,MC.options));
         }
 

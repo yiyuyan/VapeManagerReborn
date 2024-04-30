@@ -31,7 +31,7 @@ public abstract class AccessibilityOptionsScreenMixin extends SimpleOptionsSubSc
         ArrayList<OptionInstance<?>> hackOptions = new ArrayList<>();
         Minecraft MC = Minecraft.getInstance();
         for(Module module:VapeManagerReborn.modules){
-            hackOptions.add(OptionInstance.createBoolean(module.getName(),OptionInstance.noTooltip(),module.enabled,(zt) -> {
+            hackOptions.add(OptionInstance.createBoolean(module.getName()+" ("+module.key+")",OptionInstance.noTooltip(),module.enabled,(zt) -> {
                 try {
                     if(!JNAUtils.isPressed(KeyEvent.VK_SHIFT)){
                         module.setEnabled(zt.booleanValue());

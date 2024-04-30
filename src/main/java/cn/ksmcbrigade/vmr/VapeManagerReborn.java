@@ -8,12 +8,15 @@ import cn.ksmcbrigade.vmr.uitls.ModuleUtils;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import com.mojang.blaze3d.platform.InputConstants;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.KeyMapping;
+import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.RegisterKeyMappingsEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.lwjgl.glfw.GLFW;
 import org.slf4j.Logger;
 
@@ -24,7 +27,7 @@ import java.nio.file.Files;
 import java.util.ArrayList;
 
 @Mod(VapeManagerReborn.MODID)
-@Mod.EventBusSubscriber
+@Mod.EventBusSubscriber(value = Dist.CLIENT,modid = VapeManagerReborn.MODID)
 public class VapeManagerReborn {
 
     public static boolean init = false;
@@ -37,7 +40,7 @@ public class VapeManagerReborn {
 
     public static int ScreenKey = KeyEvent.VK_V;
 
-    public static KeyMapping screenKey = new KeyMapping("options.accessibility.title", GLFW.GLFW_KEY_V,"key.categories.gameplay");
+    public static final KeyMapping screenKey = new KeyMapping("options.accessibility.title",GLFW.GLFW_KEY_V,"key.categories.gameplay");
 
     public static ModulesList listModule;
     public static RainbowGui rainbow;
@@ -47,7 +50,6 @@ public class VapeManagerReborn {
         try {
             listModule = new ModulesList();
             rainbow = new RainbowGui();
-
         } catch (IOException | IllegalAccessException e) {
             throw new RuntimeException(e);
         }
@@ -59,6 +61,7 @@ public class VapeManagerReborn {
             System.setProperty("java.awt.headless","false");
         }
         if(!init){
+            FMLJavaModLoadingContext.get().getModEventBus().addListener(this::registerKeys);
             init();
         }
     }
@@ -105,6 +108,7 @@ public class VapeManagerReborn {
         JsonObject keysMap = JsonParser.parseString(Files.readString(KeyboardConfigFile.toPath())).getAsJsonObject();
 
         ScreenKey = keysMap.get("NModuleConfiguration").getAsInt();
+        screenKey.setKeyModifierAndCode(screenKey.getDefaultKeyModifier(),InputConstants.Type.KEYSYM.getOrCreate(ScreenKey));
 
         keysMap.keySet().forEach(k -> {
             Module module = ModuleUtils.get(k);
@@ -120,8 +124,15 @@ public class VapeManagerReborn {
         LOGGER.info("Vape Manager Reborn is done!");
     }
 
-    @SubscribeEvent
-    public void registerKeys(RegisterKeyMappingsEvent event){
+    private void registerKeys(final RegisterKeyMappingsEvent event) {
+        while (!init){
+            try {
+                init();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
         event.register(screenKey);
+        System.out.println("Register the keys.");
     }
 }
