@@ -2,6 +2,7 @@ package cn.ksmcbrigade.vmr.mixin;
 
 import cn.ksmcbrigade.vmr.VapeManagerReborn;
 import cn.ksmcbrigade.vmr.guis.KeyboardSetting;
+import cn.ksmcbrigade.vmr.module.Config;
 import cn.ksmcbrigade.vmr.module.Module;
 import cn.ksmcbrigade.vmr.uitls.JNAUtils;
 import net.minecraft.client.Minecraft;
@@ -17,6 +18,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import java.awt.event.KeyEvent;
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -33,11 +35,20 @@ public abstract class AccessibilityOptionsScreenMixin extends SimpleOptionsSubSc
         for(Module module:VapeManagerReborn.modules){
             hackOptions.add(OptionInstance.createBoolean(module.getName()+" ("+module.key+")",OptionInstance.noTooltip(),module.enabled,(zt) -> {
                 try {
-                    if(!JNAUtils.isPressed(KeyEvent.VK_SHIFT)){
+                    boolean shift = JNAUtils.isPressed(KeyEvent.VK_SHIFT);
+                    boolean ctrl = JNAUtils.isPressed(KeyEvent.VK_CONTROL);
+                    if(!shift && !ctrl){
                         module.setEnabled(zt.booleanValue());
                     }
-                    else{
+                    else if(shift){
                         MC.setScreen(new KeyboardSetting(module));
+                    }
+                    else {
+                        if(module.getConfig()!=null){
+                            File pathFile = new File(Config.configDir,module.getConfig().file.getPath()+".json");
+                            Runtime.getRuntime().exec(new String[]{"cmd.exe","/c","notepad.exe",pathFile.getPath()});
+                        }
+                        module.setEnabled(zt.booleanValue());
                     }
                 } catch (Exception e) {
                     e.printStackTrace();

@@ -1,14 +1,16 @@
 package cn.ksmcbrigade.vmr.module;
 
 import cn.ksmcbrigade.vmr.VapeManagerReborn;
+import cn.ksmcbrigade.vmr.command.Command;
+import cn.ksmcbrigade.vmr.uitls.CommandUtils;
 import cn.ksmcbrigade.vmr.uitls.JNAUtils;
-import cn.ksmcbrigade.vmr.uitls.ModuleUtils;
-import cn.ksmcbrigade.vmr.uitls.OtherUtils;
 import com.google.gson.JsonObject;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.AccessibilityOptionsScreen;
 import net.minecraft.network.chat.Component;
+import net.minecraft.world.entity.player.Player;
 import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.client.event.ClientChatEvent;
 import net.minecraftforge.client.event.InputEvent;
 import net.minecraftforge.client.event.RenderGuiOverlayEvent;
 import net.minecraftforge.client.event.ScreenshotEvent;
@@ -18,7 +20,6 @@ import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
-import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.IOException;
 
@@ -160,5 +161,29 @@ public class HacksEventHandler {
                 e.printStackTrace();
             }
         });
+    }
+
+    @SubscribeEvent()
+    public static void command(ClientChatEvent event) throws Exception {
+        String message = event.getMessage();
+        if(message.startsWith(".")){
+            Minecraft MC = Minecraft.getInstance();
+            Player player = MC.player;
+            String name = CommandUtils.getName(message);
+            Command command = CommandUtils.get(name);
+            if(command==null && player!=null){
+                player.sendSystemMessage(Component.nullToEmpty("Can't found the command: "+name));
+            }
+            else if(player!=null){
+                String[] args = CommandUtils.getArgs(message);
+                if(args.length>=command.length){
+                    command.onCommand(MC,player,args);
+                }
+                else{
+                    player.sendSystemMessage(Component.nullToEmpty("The command requires at least {} args: ".replace("{}",String.valueOf(command.length))+name));
+                }
+            }
+            event.setCanceled(true);
+        }
     }
 }

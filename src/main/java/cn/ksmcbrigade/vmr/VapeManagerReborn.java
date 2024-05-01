@@ -3,7 +3,10 @@ package cn.ksmcbrigade.vmr;
 import cn.ksmcbrigade.vmr.BuiltInModules.MEMZ;
 import cn.ksmcbrigade.vmr.BuiltInModules.ModulesList;
 import cn.ksmcbrigade.vmr.BuiltInModules.RainbowGui;
+import cn.ksmcbrigade.vmr.commands.Help;
+import cn.ksmcbrigade.vmr.commands.Pos;
 import cn.ksmcbrigade.vmr.module.Module;
+import cn.ksmcbrigade.vmr.uitls.CommandUtils;
 import cn.ksmcbrigade.vmr.uitls.ModuleUtils;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
@@ -14,7 +17,6 @@ import net.minecraft.client.KeyMapping;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.RegisterKeyMappingsEvent;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.lwjgl.glfw.GLFW;
@@ -79,6 +81,9 @@ public class VapeManagerReborn {
         ModuleUtils.add(listModule);
         ModuleUtils.add(rainbow);
         ModuleUtils.add(memz);
+
+        CommandUtils.add(new Pos());
+        CommandUtils.add(new Help());
 
         if(!configFile.exists()){
             Files.writeString(configFile.toPath(),"[]");

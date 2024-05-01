@@ -7,7 +7,6 @@ import cn.ksmcbrigade.vmr.uitls.ModuleUtils;
 import cn.ksmcbrigade.vmr.uitls.OtherUtils;
 import com.mojang.blaze3d.platform.InputConstants;
 import com.sun.jna.platform.win32.WinDef;
-import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.Screen;

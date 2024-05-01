@@ -10,7 +10,7 @@ import java.nio.file.Files;
 
 public class Config {
 
-    public final File configDir = new File("config/vmr/modules/");
+    public static final File configDir = new File("config/vmr/modules/");
 
     public File file;
     public JsonObject data;
