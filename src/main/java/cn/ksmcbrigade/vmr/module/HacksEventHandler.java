@@ -147,20 +147,25 @@ public class HacksEventHandler {
             VapeManagerReborn.init();
         }
 
-        JsonObject data = new JsonObject();
-        data.addProperty("result",event.getResultMessage().getString());
-        data.addProperty("file",event.getScreenshotFile().getPath());
-        VapeManagerReborn.modules.stream().filter(module -> module.enabled).toList().forEach(module -> {
-            try {
-                JsonObject newData = module.screenshot(data);
-                if(newData!=data){
-                    event.setResultMessage(Component.nullToEmpty(newData.get("result").getAsString()));
-                    event.setScreenshotFile(new File(newData.get("file").getAsString()));
+        try {
+            JsonObject data = new JsonObject();
+            data.addProperty("result",event.getResultMessage().getString());
+            data.addProperty("file",event.getScreenshotFile().getPath());
+            VapeManagerReborn.modules.stream().filter(module -> module.enabled).toList().forEach(module -> {
+                try {
+                    JsonObject newData = module.screenshot(data);
+                    if(newData!=data){
+                        event.setResultMessage(Component.nullToEmpty(newData.get("result").getAsString()));
+                        event.setScreenshotFile(new File(newData.get("file").getAsString()));
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
                 }
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        });
+            });
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
     @SubscribeEvent()
